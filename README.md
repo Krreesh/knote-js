@@ -12,7 +12,7 @@ The folders in this repository correspond to the exercises in the course. In the
 1. Scale your application to more than a single instance.
 1. Deploy your app in the cloud using Kubernetes, Amazon Web Services (AWS) and their managed Kubernetes offering.
 
-<h2> Application deployed kubernetes cluster on EC2 instanc</h2>
+<h2> Application deployed on kubernetes cluster on EC2 instance</h2>
 
 <img src="https://shreyagorey.s3.ap-south-1.amazonaws.com/knote_app.JPG" />
 
@@ -38,9 +38,9 @@ External Traffic Policy:  Cluster
 Events:                   <none>
 </pre>
 $ k port-forward --address 0.0.0.0 svc/knote 8080:80
-    Forwarding from 0.0.0.0:8080 -> 3000
+<pre>    Forwarding from 0.0.0.0:8080 -> 3000
     Handling connection for 8080
-
+</pre>
     <h3> That solved the issue</h3>
  <h2> Got ImagePullBackOff error due to storage issue </h2>
  <pre>
