@@ -16,8 +16,8 @@ The folders in this repository correspond to the exercises in the course. In the
 
 <img src="https://shreyagorey.s3.ap-south-1.amazonaws.com/knote_app.JPG" />
 
-Issue faced: Application was accessible inside EC2 instance. Checked service knote
-
+Issue faced: Application was accessible only inside EC2 instance.  Checked service knote
+<pre>
 $k describe svc knote
 Name:                     knote
 Namespace:                default
@@ -36,7 +36,7 @@ Endpoints:                172.17.0.3:3000
 Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
-
+</pre>
 $ k port-forward --address 0.0.0.0 svc/knote 8080:80
     Forwarding from 0.0.0.0:8080 -> 3000
     Handling connection for 8080
