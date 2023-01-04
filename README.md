@@ -15,4 +15,4 @@ The folders in this repository correspond to the exercises in the course. In the
 <h2> Application deployed kubernetes cluster on EC2 instanc</h2>
 
 <img src="https://shreyagorey.s3.ap-south-1.amazonaws.com/knote_app.JPG" />
-_Last updated: 18 May 2022_
+_Last updated: 04 Jan 2022_
