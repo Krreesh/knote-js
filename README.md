@@ -12,4 +12,7 @@ The folders in this repository correspond to the exercises in the course. In the
 1. Scale your application to more than a single instance.
 1. Deploy your app in the cloud using Kubernetes, Amazon Web Services (AWS) and their managed Kubernetes offering.
 
+<h2> Application deployed kubernetes cluster on EC2 instanc</h2>
+
+<img src="https://shreyagorey.s3.ap-south-1.amazonaws.com/knote_app.JPG" />
 _Last updated: 18 May 2022_
