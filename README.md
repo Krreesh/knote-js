@@ -15,4 +15,31 @@ The folders in this repository correspond to the exercises in the course. In the
 <h2> Application deployed kubernetes cluster on EC2 instanc</h2>
 
 <img src="https://shreyagorey.s3.ap-south-1.amazonaws.com/knote_app.JPG" />
+
+Issue faced: Application was accessible inside EC2 instance. Checked service knote
+
+$k describe svc knote
+Name:                     knote
+Namespace:                default
+Labels:                   <none>
+Annotations:              <none>
+Selector:                 app=knote
+Type:                     LoadBalancer
+IP Family Policy:         SingleStack
+IP Families:              IPv4
+IP:                       10.104.197.183
+IPs:                      10.104.197.183
+Port:                     <unset>  80/TCP
+TargetPort:               3000/TCP
+NodePort:                 <unset>  32171/TCP
+Endpoints:                172.17.0.3:3000
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+
+$ k port-forward --address 0.0.0.0 svc/knote 8080:80
+    Forwarding from 0.0.0.0:8080 -> 3000
+    Handling connection for 8080
+
+    <h3> That solved the issue</h3>
 _Last updated: 04 Jan 2022_
