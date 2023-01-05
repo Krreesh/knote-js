@@ -84,7 +84,7 @@ log      =internal log           bsize=4096   blocks=2560, version=2
 realtime =none                   extsz=4096   blocks=0, rtextents=0
 data blocks changed from 2096635 to 2620923
 </pre>
-<h2> Increased filesystem to 10G : Output of df -h</h2>
+<h2> Increased filesystem size to 10G : Output of df -h</h2>
 <pre>
 [ec2-user@ip-172-31-85-178 04-05]$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
